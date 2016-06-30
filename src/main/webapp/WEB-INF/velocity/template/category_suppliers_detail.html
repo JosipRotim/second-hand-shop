@@ -1,0 +1,49 @@
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+	    <div class="panel-heading"><span class="lead">Input products</span></div>
+	    <div  ng-controller="TabsController as ctrlTab">
+	    <div class="tablecontainer" ng-controller="dialogController as ctrl">    			
+  <md-tabs md-selected="itemListCtrl.selectedIndex" md-border-bottom md-autoselect>
+   <md-tab label="{{InputProductTitle}}">
+   <md-table-container>
+	<table md-table md-row-select multiple md-progress="promise" >
+	     <thead md-head md-order="query.order">
+	       <tr md-row>
+	         <th md-column>ID</th>
+	         <th md-column>Date of entrance</th>
+	         <th md-column>Input price</th>
+	         <th md-column>Pieces</th> 
+	         <th md-column>Adress of entrance</th> 
+	         <th md-column>Town of entrance</th> 
+	         <th md-column>Edit</th>                 
+	       </tr>
+	     </thead>
+	     <tbody md-body>
+	       <tr md-row md-auto-select="true" ng-repeat="item in inputProducts" ng-click="ctrlTab.onInputProductSelect({ title:item.dateOfEntrance, content:'products' , active: true}, item)">
+	          <td md-cell>{{item.id}}</td>
+	          <td md-cell>{{item.dateOfEntrance}}</td>
+	          <td md-cell>{{item.inputPrice}}</td>
+   	          <td md-cell>{{item.pieces}}</td>
+   	          <td md-cell>{{item.location.address}}</td>
+   	          <td md-cell>{{item.location.city}}</td>
+   	          <td md-cell><md-button class="md-primary md-raised" ng-click="showConfirm($event, item);$event.stopPropagation()">Edit</md-button></td>
+	        </tr>
+	      </tbody>
+	</table>
+   </md-table-container>
+   </md-tab>
+   
+    </md-tabs>
+    <div class="alert alert-info fade in" ng-show="status">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> {{status }}</div>			
+		</div>
+		
+	     <tabs>
+        <pane active="pane.active" heading="{{pane.title}}" ng-repeat="pane in panes">
+          <div ng-include="pane.content"></div>
+        </pane>
+      </tabs>
+</div>
+	</div>
+

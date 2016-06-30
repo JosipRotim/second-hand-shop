@@ -1,0 +1,32 @@
+	    
+<div class="tablecontainer" ng-controller="dialogController as ctrl">    			
+ 
+	<table md-table md-row-select multiple md-progress="promise">
+	     <thead md-head md-order="query.order">
+	       <tr md-row>
+	         <th md-column>Product ID</th>
+	         <th md-column>Code Product</th>
+	         <th md-column>Product Size</th>
+	         <th md-column>Price</th> 
+	         <th md-column>Description</th>  
+	         <th md-column>Edit</th>                 
+	       </tr>
+	     </thead>
+	     <tbody md-body>
+	       <tr md-row md-auto-select="true" ng-repeat="item in products" ng-click="itemListCtrl.onItemSelect($state, item)">
+	          <td md-cell>{{item.id}}</td>
+	          <td md-cell>{{item.codeProduct}}</td>
+	          <td md-cell>{{item.productSize}}</td>
+   	          <td md-cell>{{item.productPrice}}</td>
+   	          <td md-cell>{{item.description}}</td>
+   	          <td md-cell><md-button class="md-primary md-raised" ng-click="showConfirm($event, item);$event.stopPropagation()">Edit</md-button></td>
+	        </tr>
+	      </tbody>
+	</table>
+   
+    <div class="alert alert-info fade in" ng-show="status">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> {{status }}</div>			
+		</div>
+
+

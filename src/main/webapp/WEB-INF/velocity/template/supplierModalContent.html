@@ -1,0 +1,27 @@
+<div ng-controller="HomeCtrl">
+<div class="splash" style="width:600px; margin:0 auto;
+text-align:center">
+<h1>{{ title }}</h1>
+<p>This is a template for a simple home screen
+website. Use it as a starting point to create
+something more unique.</p>
+<code>app/home/home.html</code>
+<hr>
+<p><a ng-click="open()" class="btn btn-primary"
+role="button">Open Modal »</a></p>
+</div>
+<!-- Modal Script -->
+<script type="text/ng-template" id="myModalContent.html">
+<div class="modal-header">
+<button type="button" class="close" datadismiss="modal" aria-hidden="true">&times;</button>
+<h3 class="modal-title">Hello from Modal!</h3>
+</div>
+<div class="modal-body">
+Modal Content from: <b>{{ content }}</b>
+</div>
+<div class="modal-footer">
+<button class="btn btn-danger" ngclick="
+cancel()">Cancel</button>
+</div>
+</script>
+</div>

@@ -1,0 +1,46 @@
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+	    <div class="panel-heading"><span class="lead">List of Suppliers</span></div>
+	    <div  ng-controller="TabsController as ctrlTab">
+	    
+	    <div class="tablecontainer">
+	    	<table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <th>Code</th>
+	                    <th>First Name</th>
+	                    <th>Last Name</th>
+	                    <th>OIB</th>
+	                    <th>Address</th>
+	                    <th>Ptt</th>
+	                    <th>Town</th>
+	                    <th>E-mail</th>
+	                    <th>Phone</th>
+	                    <th>Fax</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr ng-repeat="item in itemListCtrl.items" ng-click="ctrlTab.onSupplierSelect(item)">
+	                    <td>{{item.codeSupplier}}</td>
+	                    <td>{{item.firstName}}</td>
+   	                    <td>{{item.lastName}}</td>
+	                    <td>{{item.oib}}</td>
+	                    <td>{{item.address}}</td>
+	                    <td>{{item.ptt}}</td>
+	                    <td>{{item.town}}</td>
+	                    <td>{{item.email}}</td>
+	                    <td>{{item.phone}}</td>
+	                    <td>{{item.fax}}</td>
+	                </tr>
+	            </tbody>
+			</table>
+		</div>
+	
+	
+	<div > <tabs>
+        <pane active="pane.active" heading="{{pane.title}}" ng-repeat="pane in panes">
+          <div ng-include="pane.content"></div>
+        </pane>
+      </tabs></div>
+      </div>
+</div>

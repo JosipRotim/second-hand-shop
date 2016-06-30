@@ -1,0 +1,53 @@
+<md-dialog aria-label="New Client" ng-cloak class="appdialog" ng-init="clientfrmctrl.init()">
+    
+    <form name="clientForm" novalidate ng-submit="clientfrmctrl.save()">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edit Input product by date: {{ ctrl.item.dateOfEntrance }}</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+      </br>
+
+            <!-- NAME -->
+            <md-input-container class="md-block">
+                <label><font size="4">Client Name</font></label>
+                <input md-maxlength="255" required name="name" ng-model="ctrl.item.id" class="dialog-close">
+                <div ng-messages="clientForm.name.$error">
+                    <div ng-message="required">This is required.</div>
+                    <div ng-message="md-maxlength">The name has to be less than 255 characters long.</div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label><font size="4">Address of entrance</font></label>
+                <input md-maxlength="255" required name="organization" ng-model="ctrl.item.location.address">
+                <div ng-messages="clientForm.organization.$error">
+                    <div ng-message="required">This is required.</div>
+                    <div ng-message="md-maxlength">The name has to be less than 255 characters long.</div>
+                </div>
+            </md-input-container>
+
+            <!-- EMAIL -->
+            <md-input-container class="md-block">
+                <label><font size="4">Town of entrance</font></label>
+                <input name="email" ng-model="ctrl.item.location.city"
+                       md-minlength="10" md-maxlength="255" />
+                <div ng-messages="clientForm.email.$error" role="alert">
+                    <div ng-message-exp="['minlength', 'maxlength']">
+                        Your email must be between 10 and 255 characters long and look like an e-mail address.
+                    </div>
+                </div>
+            </md-input-container>
+        </md-dialog-content>
+        <md-dialog-actions layout="row" layout-align="end">
+            <md-button ng-click="ctrl.cancel()" type="button">
+                Cancel
+            </md-button>
+            <md-button ng-click="ctrl.hide()" type="submit" class="md-primary">
+                Save
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
