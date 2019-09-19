@@ -2,12 +2,11 @@ package com.secondhandshop.springmvc.service;
 
 import java.util.List;
 
-import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.secondhandshop.springmvc.dao.SupplierDao;
+import com.secondhandshop.springmvc.repositories.SupplierDao;
 import com.secondhandshop.springmvc.model.Supplier;
 
 @Service("supplierService")
@@ -45,7 +44,6 @@ public class SupplierServiceImpl implements SupplierService{
 		}
 	}
 
-	
 	public void deleteSupplierByCode(String code) {
 		dao.deleteByCode(code);
 	}

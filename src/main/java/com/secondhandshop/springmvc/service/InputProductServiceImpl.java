@@ -6,11 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.secondhandshop.springmvc.dao.InputProductDao;
-import com.secondhandshop.springmvc.dao.SupplierDao;
+import com.secondhandshop.springmvc.repositories.InputProductDao;
 import com.secondhandshop.springmvc.model.InputProduct;
-import com.secondhandshop.springmvc.model.Product;
-import com.secondhandshop.springmvc.model.Supplier;
 
 @Service("inputProductService")
 @Transactional
