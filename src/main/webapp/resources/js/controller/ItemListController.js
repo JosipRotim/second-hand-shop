@@ -18,7 +18,7 @@ App.controller('ItemListController', ['async', 'ItemService', '$scope', '$http',
           
           self.onInputProductSelect = function( item) {
         	  /*
-        	  $http.post('http://localhost:8080/SecondHandShop/item/Suppliers/1').
+        	  $http.post('http://localhost:8080/cardealership/item/Suppliers/1').
         	  then(function(response){
         		  $scope.products = response.data;
         		  //console.log('selected from item service ' + JSON.stringify(response.data));

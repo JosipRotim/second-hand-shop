@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.model;
+package com.cardealership.springmvc.model;
 
 import java.util.HashSet;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.controller;
+package com.cardealership.springmvc.controller;
 
 import java.util.List;
 import java.util.Set;
@@ -10,14 +10,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.secondhandshop.springmvc.model.InputProduct;
-import com.secondhandshop.springmvc.model.Product;
-import com.secondhandshop.springmvc.model.Supplier;
-import com.secondhandshop.springmvc.service.InputProductService;
-import com.secondhandshop.springmvc.service.ItemService;
-import com.secondhandshop.springmvc.service.ProductService;
-import com.secondhandshop.springmvc.service.SupplierService;
-import com.secondhandshop.springmvc.service.SupplierServiceImpl;
+import com.cardealership.springmvc.model.InputProduct;
+import com.cardealership.springmvc.model.Product;
+import com.cardealership.springmvc.model.Supplier;
+import com.cardealership.springmvc.service.InputProductService;
+import com.cardealership.springmvc.service.ItemService;
+import com.cardealership.springmvc.service.ProductService;
+import com.cardealership.springmvc.service.SupplierService;
+import com.cardealership.springmvc.service.SupplierServiceImpl;
 
 @Controller
 public class ItemController {//Serves Data.

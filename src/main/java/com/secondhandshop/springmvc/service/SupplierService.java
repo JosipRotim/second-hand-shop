@@ -1,8 +1,8 @@
-package com.secondhandshop.springmvc.service;
+package com.cardealership.springmvc.service;
 
 import java.util.List;
 
-import com.secondhandshop.springmvc.model.Supplier;
+import com.cardealership.springmvc.model.Supplier;
 
 
 public interface SupplierService {

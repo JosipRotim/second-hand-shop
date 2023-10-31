@@ -3,7 +3,7 @@
 App.factory('SupplierService', ['$resource', function ($resource) {
     //$resource() function returns an object of resource class.
     return $resource(
-            'http://localhost:8080/SecondHandShop/supplier/:id', 
+            'http://localhost:8080/cardealership/supplier/:id', 
             {},//parameters
             {
                 update: {

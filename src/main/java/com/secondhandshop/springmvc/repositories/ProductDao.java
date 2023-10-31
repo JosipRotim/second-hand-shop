@@ -1,8 +1,8 @@
-package com.secondhandshop.springmvc.repositories;
+package com.cardealership.springmvc.repositories;
 
 import java.util.List;
 
-import com.secondhandshop.springmvc.model.Product;
+import com.cardealership.springmvc.model.Product;
 
 
 public interface ProductDao {

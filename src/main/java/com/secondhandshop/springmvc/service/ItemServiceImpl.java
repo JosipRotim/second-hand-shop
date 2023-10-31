@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.service;
+package com.cardealership.springmvc.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import com.secondhandshop.springmvc.model.Phone;
-import com.secondhandshop.springmvc.model.Printer;
-import com.secondhandshop.springmvc.model.State;
+import com.cardealership.springmvc.model.Phone;
+import com.cardealership.springmvc.model.Printer;
+import com.cardealership.springmvc.model.State;
 
 @Service("itemService")
 public class ItemServiceImpl implements ItemService{

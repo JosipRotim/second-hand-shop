@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.repositories;
+package com.cardealership.springmvc.repositories;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import com.secondhandshop.springmvc.model.Supplier;
+import com.cardealership.springmvc.model.Supplier;
 
 
 

@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.configuration;
+package com.cardealership.springmvc.configuration;
 
 import java.io.IOException;
 

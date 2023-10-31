@@ -1,10 +1,10 @@
-package com.secondhandshop.springmvc.service;
+package com.cardealership.springmvc.service;
 
 import java.util.List;
 
-import com.secondhandshop.springmvc.model.InputProduct;
-import com.secondhandshop.springmvc.model.Product;
-import com.secondhandshop.springmvc.model.Supplier;
+import com.cardealership.springmvc.model.InputProduct;
+import com.cardealership.springmvc.model.Product;
+import com.cardealership.springmvc.model.Supplier;
 
 
 public interface InputProductService {

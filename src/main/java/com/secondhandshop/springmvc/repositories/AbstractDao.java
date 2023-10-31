@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.repositories;
+package com.cardealership.springmvc.repositories;
 
 import java.io.Serializable;
 

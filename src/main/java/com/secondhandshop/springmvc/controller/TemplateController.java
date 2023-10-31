@@ -1,4 +1,4 @@
-package com.secondhandshop.springmvc.controller;
+package com.cardealership.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

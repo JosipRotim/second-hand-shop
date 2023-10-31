@@ -5,7 +5,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 	return {
 		
 			fetchCategoryList: function() {//Fetches category list from server.
-				return $http.get('http://localhost:8080/SecondHandShop/categories')
+				return $http.get('http://localhost:8080/cardealership/categories')
 					.then(
 								function(response){
 									return response.data;
@@ -18,7 +18,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			},
 
 			fetchAllItems: function(category) {//Fetches list of item for a specific category.
-					return $http.get('http://localhost:8080/SecondHandShop/item/'+category)
+					return $http.get('http://localhost:8080/cardealership/item/'+category)
 							.then(
 									function(response){
 										return response.data;
@@ -31,7 +31,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			},
 		    
 			fetchSpecificItem: function(category,id) {//Fetches a specific item based on category and item id.
-				return $http.get('http://localhost:8080/SecondHandShop/item/'+category+'/'+id)
+				return $http.get('http://localhost:8080/cardealership/item/'+category+'/'+id)
 						.then(
 								function(response){
 									return response.data;
@@ -44,7 +44,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			},
 			
 			fetchProductsByInputProductId: function(category,id) {//Fetches a specific item based on category and item id.
-				return $http.get('http://localhost:8080/SecondHandShop/item/'+category+'/'+id)
+				return $http.get('http://localhost:8080/cardealership/item/'+category+'/'+id)
 						.then(
 								function(response){
 									return response.data;
